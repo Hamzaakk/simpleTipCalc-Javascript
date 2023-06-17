@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./tip.css" type="text/css" />
+    <title>Tip Calculator</title>
+
+  </head>
+  <body>
+    <div class="back"></div>
+    <div class="container">
+      <h2 class="span">Bill total</h2>
+      <!--     <span>$</span> -->
+      <input type="number" id="first-input" placeholder="0$" value="bill" onkeyup="calcbill()">
+      <h2 class="span2">Tip</h2>
+      <!--   2 -->
+      <input type="number" id="second-input"  placeholder="0$"  value="tip" onkeyup="calcbill()">
+      <div class="last">
+        <div class="left">
+          <h3>People</h3>
+          <div class="add-moin">
+            <button value="+" id="add" onclick="addP()" onkeyup="calcbill()" style="color: #fff ;background-color: rgb(191, 143, 236);">+</button>
+            <h3 id="nbpeople" value="nbp">1</h3>
+            <button value="-" id="moin" onclick="moinP()" style="color: #fff ; background-color: rgb(191, 143, 236);" >-</button>
+          </div>
+        </div>
+        <div class="right">
+          <h3>Total per Person</h3>
+          <h1 id="result"></h1>
+        </div>
+      </div>
+  
+  
+  
+    </div>
+  
+  
+  
+
+    <script type="text/javascript" src="./tip.js"></script>
+  </body>
+</html>
